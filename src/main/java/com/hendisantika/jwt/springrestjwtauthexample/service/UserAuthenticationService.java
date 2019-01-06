@@ -32,9 +32,9 @@ public class UserAuthenticationService {
 
     public String authenticateUser(String username, String password) throws FailedToLoginException {
         boolean isAuthenticated = false;
-        if (username.equals("chathuranga") && password.equals("test123")) {
+        if (username.equals("naruto") && password.equals("test123")) {
             isAuthenticated = true;
-        } else if (username.equals("bob") && password.equals("test123")) {
+        } else if (username.equals("sasuke") && password.equals("test123")) {
             isAuthenticated = true;
         }
 
