@@ -18,7 +18,23 @@ Here is my Postman request.
 
 Login as Admin
 
-![Login as Admin](img/)
+![Login as Admin](img/admin.png "Login as Admin")
+
+Access Admin Endpoint
+
+![Access Admin Endpoint](img/admin2.png "Login as Admin")
+
+Login as User
+
+![Login as User](img/user.png "Login as User")
+
+Access User Endpoint
+
+![Access User Endpoint](img/user2.png "Access User Endpoint")
+
+Forbidden Access
+
+![Forbidded Acces](img/forbidden.png "Forbidden Access")
 
 
 
