@@ -14,3 +14,11 @@ Password: test123
 
 Here is my Postman request.
 
+### Screen shot
+
+Login as Admin
+
+![Login as Admin](img/)
+
+
+
