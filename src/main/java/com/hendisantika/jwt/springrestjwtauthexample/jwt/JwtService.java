@@ -27,7 +27,7 @@ import static java.time.ZoneOffset.UTC;
 @Component
 public class JwtService {
 
-    private static final String ISSUER = "com.chathuranga.examples";
+    private static final String ISSUER = "com.hendisantika.jwt.springrestjwtauthexample";
 
     @Autowired
     private SecretKeyProvider secretKeyProvider;
