@@ -1,0 +1,157 @@
+{
+  "info": {
+    "_postman_id": "2bef469e-0bd5-4374-bdd9-61ebc43c6fee",
+    "name": "spring-rest-jwt-auth-example",
+    "description": "spring-rest-jwt-auth-example",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Login as Admin to Get Token",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"username\": \"naruto\",\n\t\"password\": \"test123\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/login",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "login"
+          ]
+        },
+        "description": "Login as Admin to Get Token"
+      },
+      "response": []
+    },
+    {
+      "name": "Login as User to Get Token",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"username\": \"sasuke\",\n\t\"password\": \"test123\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/login",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "login"
+          ]
+        },
+        "description": "Login as User to Get Token"
+      },
+      "response": []
+    },
+    {
+      "name": "Access Admin Endpoint",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJuYXJ1dG8iLCJleHAiOjE1ODY0NTE1NDksImlzcyI6ImNvbS5oZW5kaXNhbnRpa2Euand0LnNwcmluZ3Jlc3Rqd3RhdXRoZXhhbXBsZSJ9.4t6ylg9aHZ_duAxAaiTeAXmqkkazg2XyBEK0qcTBKlQ5NBFK-_BsRBLjyh8k0NIlFgc5hYS8opuJ_z03i51CJw",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/admin/hello",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "admin",
+            "hello"
+          ]
+        },
+        "description": "Access Admin Endpoint"
+      },
+      "response": []
+    },
+    {
+      "name": "Access User Endpoint",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzYXN1a2UiLCJleHAiOjE1ODY0NTE4NjYsImlzcyI6ImNvbS5oZW5kaXNhbnRpa2Euand0LnNwcmluZ3Jlc3Rqd3RhdXRoZXhhbXBsZSJ9.vxIyhFxLHojE6-JQt_-9FzStDMQYw3ibMtrnRGfh9NMW3jKOzr0jCDAL9vfH0AM0CGBtsSH3mbQxdq2VHBcEFA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/user/hello",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "user",
+            "hello"
+          ]
+        },
+        "description": "Access User Endpoint"
+      },
+      "response": []
+    }
+  ],
+  "protocolProfileBehavior": {}
+}
